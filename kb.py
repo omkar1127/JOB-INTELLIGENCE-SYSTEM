@@ -6,7 +6,7 @@ from langchain_core.documents import Document
 import time
 
 # ─── Load Gemini API Key ─────────────────────
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAy1mlpkHR6egX-r7Igo-LhRabwgk5RZ_M"
+os.environ["GOOGLE_API_KEY"] = "api_key"
 
 # ─── Embeddings Function ───────────────────
 embedding_function = GoogleGenerativeAIEmbeddings(
