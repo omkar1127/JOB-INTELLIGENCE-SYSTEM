@@ -84,11 +84,11 @@ Ask natural-language questions such as:
 
 ## 🧠 System Architecture
 
-├── ui.py # Streamlit UI & application logic
-├── knowledge_builder.py # Vector database builder (RAG)
-├── sal_model.ipynb # Salary model training notebook
-├── salary_model.pkl # Trained ML model
-├── chroma/ # Persistent vector store
+├── ui.py # Streamlit UI & application logic<br>
+├── knowledge_builder.py # Vector database builder (RAG)<br>
+├── sal_model.ipynb # Salary model training notebook<br>
+├── salary_model.pkl # Trained ML model<br>
+├── chroma/ # Persistent vector store<br>
 └── README.md
 
 ## ⚙️ Tech Stack
