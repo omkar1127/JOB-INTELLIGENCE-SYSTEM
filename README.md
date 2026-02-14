@@ -2,123 +2,110 @@
 
 # 💼 Job Intelligence System
 
-### AI-Powered Salary Prediction & Job Analytics Platform
+### AI-Powered Salary Prediction, Resume Intelligence & Global Job Analytics
 
 An end-to-end AI-powered job analytics platform that predicts salaries, enables resume-based insights, provides a Retrieval-Augmented Generation (RAG) chatbot, and visualizes the highest-paying jobs globally — all through an interactive Streamlit web application.
 
-🚀 Predict salaries • Analyze resumes • RAG chatbot • Global insights
+🚀 Predict salaries • Analyze resumes • RAG chatbot • Explore high-paying jobs worldwide
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![Gemini](https://img.shields.io/badge/Google-Gemini-green)
+![LangChain](https://img.shields.io/badge/LangChain-RAG-orange)
+![Google Gemini](https://img.shields.io/badge/Google-Gemini-green)
 ![License](https://img.shields.io/badge/License-MIT-purple)
 
 </div>
 
-✨ Overview
+---
 
-The Job Intelligence System is an end-to-end AI-driven analytics platform that combines:
+## ✨ Overview
 
-📄 Resume understanding using LLMs
+**Job Intelligence System** is an end-to-end **AI-driven job analytics platform** that combines:
 
-🔮 Machine learning salary prediction
+- 📄 **Resume understanding using LLMs**
+- 🔮 **Machine learning salary prediction**
+- 🤖 **Retrieval-Augmented Generation (RAG) chatbot**
+- 🌍 **Interactive global salary visualization**
 
-🤖 Retrieval-Augmented Generation (RAG) chatbot
+All delivered through a modern **Streamlit web application**.
 
-🌍 Interactive global salary visualization
+---
 
-All delivered through a modern Streamlit interface.
+## 🚀 Key Features
 
-🚀 Key Features
-🔮 Salary Prediction Engine
+### 🔮 Salary Prediction Engine
+- ✔ ML-based annual salary prediction (USD)
+- ✔ Resume-driven feature extraction
+- ✔ Supports **remote, hybrid & onsite** roles
 
-✔ ML-based annual salary prediction (USD)
-✔ Resume-driven feature extraction
-✔ Supports remote, hybrid & onsite roles
+**Inputs**
+- Employment type  
+- Company size & location  
+- Industry  
+- Remote ratio  
+- Resume (PDF)
 
-Inputs
+---
 
-Employment type
+### 📄 Resume Intelligence (LLM-Powered)
+Automatically extracts structured insights from resumes:
+- Job title  
+- Experience level (EN / MI / SE / EX)  
+- Education level  
+- Years of experience  
+- Number of skills  
 
-Company size & location
+Powered by **Google Gemini 2.5 Flash**.
 
-Industry
+---
 
-Remote ratio
+### 🤖 RAG AI Chatbot
+Ask natural-language questions such as:
+- *“Which jobs pay the most globally?”*
+- *“How does experience impact salary?”*
 
-Resume (PDF)
+**Tech Stack**
+- ChromaDB (Vector Store)
+- LangChain
+- HuggingFace Embeddings
+- Google Gemini LLM
 
-📄 Resume Intelligence (LLM-Powered)
+> Responses are generated **only from retrieved context** (no hallucinations).
 
-⚡ Automatically extracts structured insights:
+---
 
-Job title
+### 🌍 Global Highest-Paying Jobs Explorer
+- 🌐 Interactive world map
+- 📊 Salary-based bubble visualization
+- 🔎 Filter by country & job title
+- 📋 Ranked salary table
 
-Experience level (EN / MI / SE / EX)
+---
 
-Education level
+## 🧠 System Architecture
 
-Years of experience
-
-Skill count
-
-🧠 Powered by Google Gemini 2.5 Flash
-
-🤖 RAG AI Chatbot
-
-Ask natural questions like:
-
-“What jobs pay the most in Germany?”
-“How does experience affect salary?”
-
-Architecture
-
-🔹 ChromaDB (Vector Store)
-
-🔹 LangChain
-
-🔹 HuggingFace Embeddings
-
-🔹 Gemini LLM
-
-🛡️ Answers are generated only from retrieved context
-
-🌍 Global Highest-Paying Jobs Explorer
-
-📌 Interactive world map
-📌 Salary-based bubble visualization
-📌 Country & job-title filtering
-📌 Ranked salary table
-
-🧠 System Architecture
-├── ui.py                   # Streamlit UI + App Logic
-├── knowledge_builder.py    # RAG Vector DB Builder
-├── sal_model.ipynb         # Salary Model Training
-├── salary_model.pkl        # Trained Regression Model
-├── chroma/                 # Persistent Vector Store
+├── ui.py # Streamlit UI & application logic
+├── knowledge_builder.py # Vector database builder (RAG)
+├── sal_model.ipynb # Salary model training notebook
+├── salary_model.pkl # Trained ML model
+├── chroma/ # Persistent vector store
 └── README.md
 
-⚙️ Tech Stack
-🖥️ Frontend
+## ⚙️ Tech Stack
 
-Streamlit
+### 🖥 Frontend
+- Streamlit
+- Plotly
 
-Plotly
+### 🤖 AI & LLMs
+- Google Gemini (Chat & Embeddings)
+- LangChain
+- ChromaDB
+- HuggingFace Sentence Transformers
 
-🤖 AI & LLMs
+### 📊 Machine Learning
+- Scikit-learn
+- Pandas
+- NumPy
 
-Google Gemini (Chat + Embeddings)
-
-LangChain
-
-ChromaDB
-
-HuggingFace Sentence Transformers
-
-📊 Machine Learning
-
-Scikit-learn
-
-Pandas
-
-NumPy
+---
