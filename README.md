@@ -12,7 +12,6 @@ An end-to-end AI-powered job analytics platform that predicts salaries, enables 
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
 ![LangChain](https://img.shields.io/badge/LangChain-RAG-orange)
 ![Google Gemini](https://img.shields.io/badge/Google-Gemini-green)
-![License](https://img.shields.io/badge/License-MIT-purple)
 
 </div>
 
