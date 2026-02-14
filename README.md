@@ -4,9 +4,7 @@
 
 ### AI-Powered Salary Prediction, Resume Intelligence & Global Job Analytics
 
-An end-to-end AI-powered job analytics platform that predicts salaries, enables resume-based insights, provides a Retrieval-Augmented Generation (RAG) chatbot, and visualizes the highest-paying jobs globally — all through an interactive Streamlit web application.
-
-🚀 Predict salaries • Analyze resumes • RAG chatbot • Explore high-paying jobs worldwide
+🚀 Predict salaries • RAG chatbot • Explore high-paying jobs worldwide
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
@@ -19,14 +17,8 @@ An end-to-end AI-powered job analytics platform that predicts salaries, enables 
 
 ## ✨ Overview
 
-**Job Intelligence System** is an end-to-end **AI-driven job analytics platform** that combines:
-
-- 📄 **Resume understanding using LLMs**
-- 🔮 **Machine learning salary prediction**
-- 🤖 **Retrieval-Augmented Generation (RAG) chatbot**
-- 🌍 **Interactive global salary visualization**
-
-All delivered through a modern **Streamlit web application**.
+**Job Intelligence System**
+An end-to-end AI-powered job analytics platform that predicts salaries using uploaded resume, provides a Retrieval-Augmented Generation (RAG) chatbot, and visualizes the highest-paying jobs globally — all through an interactive Streamlit web application.
 
 ---
 
