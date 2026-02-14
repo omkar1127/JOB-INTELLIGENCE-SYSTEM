@@ -46,7 +46,7 @@ Automatically extracts structured insights from resumes:
 - Years of experience  
 - Number of skills  
 
-Powered by **Google Gemini 2.5 Flash**.
+Powered by **Google Gemini Flash**.
 
 ---
 
