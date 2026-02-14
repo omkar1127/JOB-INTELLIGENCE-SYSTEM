@@ -1,17 +1,29 @@
+<div align="center">
 💼 Job Intelligence System
-
 An end-to-end AI-powered job analytics platform that predicts salaries, enables resume-based insights, provides a Retrieval-Augmented Generation (RAG) chatbot, and visualizes the highest-paying jobs globally — all through an interactive Streamlit web application.
+</div>
+✨ Overview
 
-🚀 Features
-🔮 Salary Prediction
+The Job Intelligence System is an end-to-end AI-driven analytics platform that combines:
 
-Predicts annual salary (USD) using a trained machine-learning model
+📄 Resume understanding using LLMs
 
-Inputs include:
+🔮 Machine learning salary prediction
 
-Resume (PDF upload)
+🤖 Retrieval-Augmented Generation (RAG) chatbot
 
-Job title & experience level (auto-extracted)
+🌍 Interactive global salary visualization
+
+All delivered through a modern Streamlit interface.
+
+🚀 Key Features
+🔮 Salary Prediction Engine
+
+✔ ML-based annual salary prediction (USD)
+✔ Resume-driven feature extraction
+✔ Supports remote, hybrid & onsite roles
+
+Inputs
 
 Employment type
 
@@ -21,11 +33,11 @@ Industry
 
 Remote ratio
 
-Resume parsing is powered by Google Gemini
+Resume (PDF)
 
 📄 Resume Intelligence (LLM-Powered)
 
-Automatically extracts structured data from resumes:
+⚡ Automatically extracts structured insights:
 
 Job title
 
@@ -35,44 +47,65 @@ Education level
 
 Years of experience
 
-Number of skills
+Skill count
 
-Uses Gemini 2.5 Flash for fast and accurate document understanding
+🧠 Powered by Google Gemini 2.5 Flash
 
 🤖 RAG AI Chatbot
 
-Ask natural-language questions about:
+Ask natural questions like:
 
-Job roles
+“What jobs pay the most in Germany?”
+“How does experience affect salary?”
 
-Salaries
+Architecture
 
-Experience trends
+🔹 ChromaDB (Vector Store)
 
-Uses:
+🔹 LangChain
 
-ChromaDB for vector storage
+🔹 HuggingFace Embeddings
 
-HuggingFace embeddings
+🔹 Gemini LLM
 
-Google Gemini as the LLM
-
-Answers are generated only from retrieved context (no hallucinations)
+🛡️ Answers are generated only from retrieved context
 
 🌍 Global Highest-Paying Jobs Explorer
 
-Interactive world map visualization
+📌 Interactive world map
+📌 Salary-based bubble visualization
+📌 Country & job-title filtering
+📌 Ranked salary table
 
-Filter by:
+🧠 System Architecture
+├── ui.py                   # Streamlit UI + App Logic
+├── knowledge_builder.py    # RAG Vector DB Builder
+├── sal_model.ipynb         # Salary Model Training
+├── salary_model.pkl        # Trained Regression Model
+├── chroma/                 # Persistent Vector Store
+└── README.md
 
-Country
+⚙️ Tech Stack
+🖥️ Frontend
 
-Job title
+Streamlit
 
-Displays:
+Plotly
 
-Top-N highest paying jobs
+🤖 AI & LLMs
 
-Salary-based geospatial scatter plot
+Google Gemini (Chat + Embeddings)
 
-Ranked salary table
+LangChain
+
+ChromaDB
+
+HuggingFace Sentence Transformers
+
+📊 Machine Learning
+
+Scikit-learn
+
+Pandas
+
+NumPy
