@@ -1,5 +1,6 @@
 import os
 from sentence_transformers import SentenceTransformer
+from langchain_huggingface import HuggingFaceEmbeddings
 import pandas as pd
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
@@ -10,9 +11,9 @@ import time
 os.environ["GOOGLE_API_KEY"] = "api_key"
 
 # ─── Embeddings Function ───────────────────
-embedding_function = GoogleGenerativeAIEmbeddings(
-    model='sentence-transformers/all-MiniLM-L6-v2'
-)
+embedding_function = HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
 
 # ─── Load CSV ──────────────────────────────
 df = pd.read_csv("ai_job_dataset.csv")
