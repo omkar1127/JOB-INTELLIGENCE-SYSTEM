@@ -1,4 +1,5 @@
 import os
+from sentence_transformers import SentenceTransformer
 import pandas as pd
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
@@ -10,7 +11,7 @@ os.environ["GOOGLE_API_KEY"] = "api_key"
 
 # ─── Embeddings Function ───────────────────
 embedding_function = GoogleGenerativeAIEmbeddings(
-    model="models/text-embedding-004"
+    model='sentence-transformers/all-MiniLM-L6-v2'
 )
 
 # ─── Load CSV ──────────────────────────────
